@@ -15,7 +15,7 @@ pipeline {
                 echo "Code Update Started"
                 checkout([$class: 'GitSCM',
                           branches: [[name: "${main}"]],
-                          userRemoteConfigs: [[url: 'https://github.com/VenkataManeesh/docker_demo.git']]])
+                          userRemoteConfigs: [[url: 'https://github.com/humzazahid/devopsfinal.git']]])
                 echo "Code Update End"
             }
         }
